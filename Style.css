@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.elternelement {
+    background-color: brown;
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.kindelement {
+    background-color: aqua;
+    height: 250px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #23424a;
+    color: antiquewhite;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em;
+
+    /* height: 300px; */
+}
