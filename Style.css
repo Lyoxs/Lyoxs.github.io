@@ -58,9 +58,36 @@ body{
     animation: textchange infinite 10s;
   }
   @keyframes textchange{
-    0%{
-       content: 'DU STINKST';
+    1%{
+       content: 'DU STINKST 10';
     }
+    8%{
+      content: 'DU STINKST 09';
+   }
+   16%{
+    content: 'DU STINKST 08';
+ }
+ 24%{
+  content: 'DU STINKST 07';
+}
+32%{
+  content: 'DU STINKST 06';
+}
+40%{
+  content: 'DU STINKST 05';
+}
+48%{
+  content: 'DU STINKST 04';
+}
+56%{
+  content: 'DU STINKST 03';
+}
+64%{
+  content: 'DU STINKST 02';
+}
+72%{
+  content: 'DU STINKST 01';
+}
     80%{
       content: 'DU STINKST';
    }
