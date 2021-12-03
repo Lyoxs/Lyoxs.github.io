@@ -120,6 +120,9 @@ h2,h1{
 .loeschen{
     background-color: #ff4112; 
 }
+.erledigt:hover, .loeschen:hover{
+    opacity: 0.75 ;
+}
 .btn{
     display: flex;
     width: 20%;
