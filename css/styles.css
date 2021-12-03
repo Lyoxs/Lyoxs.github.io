@@ -169,55 +169,28 @@ h2,h1{
 .container li{
     font-size: 1.6rem;
     text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 6px;
 
 }
-
-	/* body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #161616;
+#nfertig li{
+    outline:solid 1.5px #796662;
+}
+#yfertig li{
+    outline:solid 1.5px #526452;
+}
+.stinker{
+background-color: #ff4112;
+color: #fff;
+padding: 1rem;
+transition: visibility 0.1s ease-in-out;
+}
+.stinker:hover,.stinkero:hover{
+    visibility: hidden;
     }
-    #todoliste {
-    padding: 1rem;
-    }
-    h2, h1 {
-    font-size: 100%;
-    }
-    label {
-    display: block;
-    }
-    ul {
-    max-width: 22rem;
-    list-style: none;
-    padding-left: 0;
-    }
-    li {
-    padding: 5px;
-    border-radius: 4px;
-    border: #a9e8e3 1px solid;
-    margin: 5px 0px;
+.stinkero{
     display: flex;
-    align-items: center;
-    }
-    li p {
-    margin: 0;
-    }
-    li button {
-    border-radius: 4px;
-    color: #FFF;
-    }
-    .erledigtWechseln {
-        margin-left: auto;
-    }
-    .loeschen {
-    background-color: orange;
-    }
-    .erledigtWechseln {
-    background-color: #ff4112;
-    }
-    .abgeschlossen .erledigtWechseln {
-    background-color: #1c89ff;
-    }
-    .abgeschlossen p {
-    text-decoration: line-through;
-    background-color: rgb(144, 255, 16);
-    } */
+    justify-content: center;
+    margin: 1.5rem;
+}
