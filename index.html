@@ -35,13 +35,13 @@
             </div>
             <button class="loeschenalle" @click="allesloeschen">Alle löschen</button>
 <div class="uebersicht">           
-    <div class="container">
+    <div class="container" id="nfertig">
         <h2 class="erledigen-li">Zu erledigen</h2>
             <ul>
                 <li v-for="aufgabe in nichterledigt">{{aufgabe.beschreibung}}</li>
             </ul>
     </div>       
-    <div class="container">
+    <div class="container" id="yfertig">
         <h2 class="abgeschlossen-li">Abgeschlossen</h2> 
             <ul>
                 <li v-for="aufgabe in erledigt">{{aufgabe.beschreibung}}</li>
