@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Official Maikrowave website. Find the latest music and downloads here."/>
+        <meta name="keywords" content="Maikrowave, Music, Free-downloads, Samplepack, bookings, Songs, Drum and Bass, Partys, Festivals  "/>
+        <meta name="robots" content="index"/>
+        <meta name="robots" content="follow"/>
+        <meta name="author" content="Maik Gebele aka Maikrowave"/>
+        <link rel="icon" href="/bildos/favicon/favicont.png">
+        <link rel="stylesheet/less" type="text/css" href="/css/styles.less" />
+        <title>Maikrowave</title>
+    </head>
+    <body class="body-bg" id="boid">
+      <span id="cursor-point" class="cursor-point hover"></span>
+      <input type="checkbox" id="checkbox-menu" style="display: none;">
+      <header class="header-menu">
+        <div  id="menu-scroll"class="background-scroll"></div>
+        <nav class="nav-container">
+          <div class="menu-left">
+            <a href="#" class="menu-btn">
+              <div class="inner-menu-btn">
+                <img class="menu-logo" src="/bildos/Bilder/icon-m.png" alt="Maikrowave icon"></img>
+              </div>
+            </a>
+            <!-- <label for="checkbox-menu" class="menu-btn">
+              <div class="inner-menu-btn">
+                <span class="menuline line1"></span>
+                <span class="menuline line2"></span>
+                <span class="menuline line3"></span>
+                <span class="menuline line4"></span>
+              </div>
+            </label> -->
+            <span id="getyeardate" class="thisyear"></span>
+          </div>
+          <div class="menu-right">
+            <a href="#music" class="links" id="music-l"><span class="blob"></span><i class="fa-solid fa-music"></i></a>
+            <a href="#contact" class="links" id="contact-l"><span class="blob"></span><i class="fa-solid fa-user"></i></a>
+            <a href="#love" class="links" id="love-l"><span class="blob"></span><i class="fa-solid fa-heart"></i></a>
+            <a href="#downloads" class="links" id="download-l"><span class="blob"></span><i class="fa-solid fa-circle-down"></i></a>
+          </div>
+        </nav>
+        <!-- falls ich mal ein menu brauche -->
+        <!-- <aside class="menu-inner">
+          <div class="side side-1"><p>About me</p></div>
+          <div class="side side-2"><p>My Music</p></div>
+          <div class="side side-3"><p>Downloads</p></div>
+          <div class="side side-4"><p>Socials</p></div>
+          <div class="side side-5"><p>Help me</p></div>
+        </aside> -->
+      </header>
+      <main class="site" id="site">
+        <header class="hero-section">
+          <div class="container-main-text">
+            <div class="img-big">
+              <img id="img-scroll" class="img-scroll ago-ego-main" src="/bildos/Bilder/augosmaximos420-low.png" alt="augenbild">
+            </div>
+            <div id="heading-scroll" class="heading-scroll modular-heading">
+              <h1 id="text-change" data-value="MAIKROWAVE" class="main-header">Maikrowave</h1>
+            </div>
+            <div class="text-box">
+              <h2 class="heading">About Me</h2>
+              <p class="hero-intro">
+               Hey, I'm Maik aka <b>Maikrowave</b>.<br>
+               I Love to make electronic Music especially <b>Drum and bass</b> and <b>House</b>.
+              </p>
+              <p class="hero-intro">
+                I try to create music that is full of <b>emotions</b> and that makes you feel something.
+                I hope you <b>feel something</b>.
+              </p>
+            </div>
+          </div>
+          <div id="socials-scroll" class="socials">
+            <div class="icons">
+              <a href="https://soundcloud.com/maikrowave" class="socials-icon" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              <a href="https://open.spotify.com/intl-de/artist/2TOCUHc7wKQ3QMgGEIkYfY?si=xATSmYc6SKu5xCl0xODxsg" class="socials-icon" target="_blank"><i class="fab fa-spotify"></i></a>
+              <a href="https://discord.gg/9Rs5k4gyJp" class="socials-icon" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://patreon.com/MAIKROWAVE" class="socials-icon" target="_blank"><i class="fab fa-patreon"></i></a>
+              <a href="https://instagram.com/maikrowavemusic" class="socials-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://tiktok.com/@maikrowavemusic" class="socials-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/channel/UCc81Xuy8r5nTLmk3Cn2sYug" class="socials-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </header>
+        <!-- <aside class="side-indicator">
+          <div class="side side-1"><p>About me</p></div>
+          <div class="side side-2"><p>My Music</p></div>
+          <div class="side side-3"><p>Downloads</p></div>
+          <div class="side side-4"><p>Socials</p></div>
+          <div class="side side-5"><p>Help me</p></div>
+        </aside> -->
+        <div class="divider" id="music"></div>
+        <section class="section music">
+          <h2 class="part-header">My Music</h2>
+          <div class="scroll-container">
+            <div class="carusell scroller" id="carusell">
+              <ul class="events">
+                <a href="https://open.spotify.com/intl-de/track/2PEvadMtc68gUGCcoMkuUA?si=94f4405bf1704e99" target="_blank">Hypericum [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/2jAwRMJOZF8sPj28IM44Fv?si=a3f352b79c3c43af"target="_blank">Pupurea [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/2PEvadMtc68gUGCcoMkuUA?si=94f4405bf1704e99"target="_blank">Hypericum [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/2jAwRMJOZF8sPj28IM44Fv?si=a3f352b79c3c43af"target="_blank">Pupurea [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/2PEvadMtc68gUGCcoMkuUA?si=94f4405bf1704e99"target="_blank">Hypericum [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/2jAwRMJOZF8sPj28IM44Fv?si=a3f352b79c3c43af"target="_blank">Pupurea [OUT NOW]</a>
+              </ul>
+            </div>
+            <div class="carusell scroller" id="carusell">
+              <ul class="events slow-a">
+                <a href="https://open.spotify.com/intl-de/track/300cVxZKrPmEuMFJWHtCLI?si=a8317a4bca3f41b9"target="_blank">Endless [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/3nm5FH3maLXOUomP3WN63p?si=133adeca52b34042"target="_blank">Faith [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/300cVxZKrPmEuMFJWHtCLI?si=a8317a4bca3f41b9"target="_blank">Endless [OUT NOW]</a>
+                <a class="special-l" href="https://open.spotify.com/intl-de/track/3nm5FH3maLXOUomP3WN63p?si=133adeca52b34042"target="_blank">Faith [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/300cVxZKrPmEuMFJWHtCLI?si=a8317a4bca3f41b9"target="_blank">Endless [OUT NOW]</a>
+                <a href="https://open.spotify.com/intl-de/track/3nm5FH3maLXOUomP3WN63p?si=133adeca52b34042"target="_blank">Faith [OUT NOW]</a>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="newest">
+            <h3>NEWEST SONGS</h3>
+          </div> -->
+          <div class="songs animate">
+            <div class="song">
+              <div class="song-img">
+                <img src="/bildos/Bilder/HYPERICUM.jpg" alt="HYPERICUM">
+              </div>
+              <div class="song-text">
+                <h3>Hypericum</h3>
+                <p>Maikrowave</p>
+              </div>
+              <div class="song-links">
+                <a href="https://open.spotify.com/intl-de/track/2PEvadMtc68gUGCcoMkuUA?si=0516741ac46e45eb" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/maikrowave/hypericum" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-img">
+                <img src="/bildos/Bilder/Purpurea-high-h.jpg" alt="Purpurea">
+              </div>
+              <div class="song-text">
+                <h3>Purpurea</h3>
+                <p>Maikrowave</p>
+              </div>
+              <div class="song-links">
+                <a href="https://open.spotify.com/intl-de/track/2jAwRMJOZF8sPj28IM44Fv?si=8676a20a19d8442a" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/maikrowave/purpurea" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-img">
+                <img src="/bildos/Bilder/faith.jpg" alt="faith">
+              </div>
+              <div class="song-text">
+                <h3>faith</h3>
+                <p>Maikrowave</p>
+              </div>
+              <div class="song-links">
+                <a href="https://open.spotify.com/intl-de/track/3nm5FH3maLXOUomP3WN63p?si=b5286e2eed134f71" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/maikrowave/faith" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="cool">
+            <h3>Old but gold</h3>
+          </div> -->
+          <div class="songs animate">
+            <div class="song">
+              <div class="song-img">
+                <img src="/bildos/Bilder/Spire.jpg" alt="Spire">
+              </div>
+              <div class="song-text">
+                <h3>Spire</h3>
+                <p>Maikrowave</p>
+              </div>
+              <div class="song-links">
+                <a href="https://open.spotify.com/intl-de/track/1ydIottBEG6ijfDZzviEHE?si=3a8d8cc7276b47d9" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/maikrowave/spire" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-img">
+                <img src="/bildos/Bilder/arise.jpg" alt="arise">
+              </div>
+              <div class="song-text">
+                <h3>arise</h3>
+                <p>Maikrowave</p>
+              </div>
+              <div class="song-links">
+                <a href="https://open.spotify.com/intl-de/track/3u51HvAIP4xXKgYiMLVyE4?si=54fbd3c9d1e74f91" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/maikrowave/arise" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-img">
+                <img src="/bildos/Bilder/even.jpg" alt="even">
+              </div>
+              <div class="song-text">
+                <h3>even</h3>
+                <p>Maikrowave</p>
+              </div>
+              <div class="song-links">
+                <a href="https://open.spotify.com/intl-de/track/0VLfbZ0A7YLwGiDdutRke4?si=0f8911390b594d82" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/maikrowave/even" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="iframes animate">
+            <div class="spotify">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2TOCUHc7wKQ3QMgGEIkYfY?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </section>
+        <div class="divider" id="contact"></div>
+        <section class="section contact">
+          <h2 class="part-header">about me</h2>
+          <div class="about-me">
+            <div class="text-box animate">
+              <h2 class="heading">This is me</h2>
+              <p class="about-intro">
+               so... you <b>made</b> it to the about me section.
+               i just wanted to say thank you for visiting my site.
+               and i hope you enjoy my music</b>.<br><br>
+               
+               but now let me tell you a little bit about me.
+               i started at the age of 6 to play the guitar. and i loved it from the beginning.<br><br>
+
+
+               a few years ago i started to make music. i was always fascinated by the idea of creating something that can make people feel something.
+               eventually endet up in FL studio :D after a while i discovered <b>drum and bass</b>. i fell in love with the genre.<br><br>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis corporis excepturi earum veritatis unde deserunt voluptate eligendi velit dicta.<br><br>
+
+               HAVE <b>FUN</b> AND STAY <b>HAPPY</b> !<br>
+              </p>
+            </div>
+            <div class="about-img animate">
+              <img class="img-about ago-ego-main" src="/bildos/Bilder/artwork.jpg" alt="memad">
+            </div>
+          </div>
+        </section>
+        <div class="divider" id="love"></div>
+        <section class="section love">
+          <h2 class="part-header">Send Love</h2>
+          <div class="patreon-sections animate">
+            <div class="survive animate">
+              <h3>Survive</h3>
+              <p>let me survive so i can live one more day</p>
+              <p class="price">€1/<span>month</span></p>
+              <a href="https://www.patreon.com/maikrowave/membership" class="cta" target="_blank" >Help me</a>
+              <p>you get Patreon</p>
+              <p>you get Soundcloud</p>
+              <p>you get Me</p>
+            </div>
+            <div class="thrive animate">
+              <h3>Thrive</h3>
+              <p>let me thrive so i can make more music</p>
+              <p class="price">€5/<span>month</span></p>
+              <a href="https://www.patreon.com/maikrowave/membership" class="cta" target="_blank">Help me</a>
+              <p>you get Cake</p>
+              <p>you get Pizzamagarita</p>
+              <p>you get good</p>
+            </div>
+            <div class="strive animate">
+              <h3>Strive</h3>
+              <p>let me strive so i can buy Ferrari</p>
+              <p class="price">€10/<span>month</span></p>
+              <a href="https://www.patreon.com/maikrowave/membership" class="cta" target="_blank">Help me</a>
+              <p>you get nothing</p>
+              <p>you get something</p>
+              <p>you get anything</p>
+            </div>
+          </div>
+          <div class="auu">
+            <p>Or just send me some love</p>
+            <div>
+              <a href="/old-stuff/funkako.html" class="cta" target="_blank">Love Yourself</a>
+              <a href="https://soundcloud.com/maikrowave" class="cta" target="_blank">Send Love</a>
+            </div>
+          </div>
+        </section>
+        <div class="divider" id="downloads"></div>
+        <section class="section downloads">
+          <h2 class="part-header">Downloads</h2>
+            <div class="circle second-c">
+              <img src="/bildos/Bilder/Maikrowave-c.png" alt="maikrowave-circle">
+            </div>
+            <div class="songs-dl">
+              <h4 class="small-heading">Download my newest songs</h4>
+              <p>Here you can download some of my music for free(Well almost free just your email/love)</p>
+              <div class="download-container">
+                <div class="download-card animate">
+                  <img src="/bildos/Bilder/HYPERICUM.jpg" alt="hypericum"></img>
+                  <div class="card-dl-text">
+                    <h3 class="small-heading"> download hypericum</h3>
+                    <p>download it for free !</p>
+                    <a class="cta" href="https://hypeddit.com/maikrowave/hypericum" target="_blank">Download now</a>
+                  </div>
+                </div>
+                <div class="download-card animate">
+                  <img src="/bildos/Bilder/faith.jpg" alt="faith"></img>
+                  <div class="card-dl-text">
+                    <h3 class="small-heading"> download faith</h3>
+                    <p>download it for free !</p>
+                    <a class="cta" href="https://hypeddit.com/maikrowave/faith" target="_blank">Download now</a>
+                  </div>
+                </div>
+                <div class="download-card animate">
+                  <img src="/bildos/Bilder/Purpurea-high-h.jpg" alt="Purpurea"></img>
+                  <div class="card-dl-text">
+                    <h3 class="small-heading"> download Purpurea</h3>
+                    <p>download it for free !</p>
+                    <a class="cta" href="https://hypeddit.com/2jhc2q" target="_blank">Download now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="samples-dl">
+              <h4 class="small-heading">Download my sampelpack</h4>
+              <p>free sample pack no email nothing, just <b>free!</b></p>
+              <a class="cta" href="/audio/Smplpk-maikrowave-free.rar" download>FREE SAMPLE PACK</a>
+            </div>
+        </section>
+        <section class="section gallery">
+          <h2 class="part-header bilder">Some Pictures</h2>
+          <div class="img-gallery">
+            <figure class="animate" >
+              <img src="/bildos/Bilder/gallery/wald1-bearb-4-nn.jpg" width="400" height="140" 
+                  alt="img">
+              <figcaption>Cover Art</figcaption>
+            </figure>
+            <figure class="animate">
+              <img src="/bildos/Bilder/gallery/god.PNG" width="400" height="140" 
+                  alt="img">
+              <figcaption>Cover Art</figcaption>
+            </figure>
+            <figure class="animate">
+              <img src="/bildos/Bilder/gallery/grafiklow.jpg" width="400" height="140" 
+                  alt="img">
+              <figcaption>Cover Art</figcaption>
+            </figure>
+            <figure class="animate">
+              <img src="/bildos/Bilder/gallery/Roses-low.jpg" width="400" height="140" 
+                  alt="img">
+              <figcaption>Cover Art</figcaption>
+            </figure>
+            <figure class="animate">
+              <img src="/bildos/Bilder/gallery/Ich_pexel_Anim_Fina_2l.gif" width="400" height="140" 
+                  alt="img">
+              <figcaption>Cover Art</figcaption>
+            </figure>
+            <figure class="animate">
+              <img src="/bildos/Bilder/gallery/sono-art-low.jpg" width="400" height="140" 
+                  alt="img">
+              <figcaption>Cover Art</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <p>other sites</p>
+            <a href="/other-sites/Impressum.html" target="_blank">Imprint</a>
+            <a href="/other-sites/Datenschutz.html" target="_blank">Privacy Policy</a>
+          </div>
+          <div class="footer-infos">
+            DO NOT MISS ANY OF MY UPCOMING PROJECTS,<br>
+            MAKE SURE TO FOLLOW ME ON SOCIAL MEDIA !<br>
+            © 2024 BY MAIKROWAVE. all rights reserved.<br>
+            THANKS FOR VISITING MY SITE ! 
+          </div>
+          <div class="footer-fun">
+            <p>other fun stuff</p>
+            <a href="/vsprojekt/index.html" target="_blank">2-do-list</a>
+            <a href="/old-stuff/funkako.html" target="_blank">Fun-stuff-jff</a>
+          </div>
+        </div> 
+      </footer>
+      <script defer src="js/Maikrowave.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/less"></script>
+      <script src="https://kit.fontawesome.com/ea28d87ec6.js" crossorigin="anonymous"></script>
+    </body>
+</html>
