@@ -415,6 +415,7 @@ main{
     .text;
     font-weight: 700;
     text-transform: lowercase;
+    background-color: @second-color;
     background: var(--main-gradiant);
     background-clip: text;
     -webkit-background-clip: text;
@@ -1169,6 +1170,11 @@ footer{
         text-decoration: underline;
       }
     }
+  }
+}
+@media (hover: none) {
+  #cursor-point{
+    display: none;
   }
 }
 
