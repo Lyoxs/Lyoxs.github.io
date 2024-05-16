@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://Lyoxs.github.io/Logo.svg">
+    <link rel="stylesheet" href="https://Lyoxs.github.io//css/styles.css">
+    <script src="/js/vue.min.js"></script>
+    <title>sry</title>
+</head>
+<body>
+    <div id="todoliste">
+        <header class="banner">
+            <h1>To-Do-Liste</h1>
+        </header>
+        <div class="input-to-do">
+            <label for="neueAufgabe">Neue Aufgabe hinzufügen</label>
+            <input type="text" id="neueAufgabe" v-on:keyup.13="neueaufgabeHinzu" v-model="neueAufgabe">
+            <button class="neuhinzu" @click="neueaufgabeHinzu">hinzufügen</button>
+        </div>
+        <h2>Alle Aufgaben</h2>
+        <div class="listen-el">
+            <div class="alle-aufgaben">
+            <ul>
+                <li v-for="(aufgabe, index) in aufgaben" :class="{'abgeschlossen' : aufgabe.fertig}">
+                    <div class="text">
+                    <p>{{aufgabe.beschreibung}}</p>
+                    </div>
+                    <div class="btn">
+                    <button class="erledigt"@click="erledigtWechseln(index)">✔</button>
+                    <button class="loeschen" @click="loeschen(index)">🞬</button>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <button class="loeschenalle" @click="allesloeschen">Alle löschen</button>
+<div class="uebersicht">           
+    <div class="container" id="nfertig">
+        <h2 class="erledigen-li">Zu erledigen</h2>
+            <ul>
+                <li v-for="aufgabe in nichterledigt">{{aufgabe.beschreibung}}</li>
+            </ul>
+    </div>       
+    <div class="container" id="yfertig">
+        <h2 class="abgeschlossen-li">Abgeschlossen</h2> 
+            <ul>
+                <li v-for="aufgabe in erledigt">{{aufgabe.beschreibung}}</li>
+            </ul>
+    </div>
+</div> 
+</div>
+</div>
+   
+<script>
+    var app = new Vue({
+        el: "#todoliste",
+        data: {
+            aufgaben: [
+            {beschreibung: "hier könnte deine Aufgabe stehen", fertig: false},
+            ],
+            neueAufgabe: ''
+        },
+        computed: {
+                erledigt() {
+                return this.aufgaben.filter(aufgabe => aufgabe.fertig);
+                },
+                nichterledigt() {
+                return this.aufgaben.filter(aufgabe => !aufgabe.fertig);
+                },
+            },
+        mounted() {
+                if(localStorage.aufgaben){
+                    this.aufgaben = JSON.parse(localStorage.aufgaben);
+                }
+            },
+        watch:{
+            aufgaben:{
+                handler(neueAufgabensave){
+                    localStorage.aufgaben = JSON.stringify(neueAufgabensave);
+                },
+                deep:true
+                }
+            },
+         methods: {
+                neueaufgabeHinzu() {
+                if(this.neueAufgabe.length > 0){
+                this.aufgaben.push({beschreibung: this.neueAufgabe, fertig: false});
+                this.neueAufgabe = '';
+                }},
+                loeschen(index) {
+                this.aufgaben.splice(index, 1);
+                },
+                allesloeschen(){
+                this.aufgaben.splice(0)
+                },
+                erledigtWechseln(index) {
+                this.aufgaben[index].fertig = this.aufgaben[index].fertig ? false : true;
+                }
+        }
+    });
+</script>    
+</body>
+</html>

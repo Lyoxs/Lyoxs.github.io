@@ -1,0 +1,97 @@
+* { box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: bisque;
+}
+.header-mid{
+  text-align: center;
+  margin: 5rem 0 2rem 0;
+  font-size: 8rem;
+  font-weight: 100;
+  color: rgb(82, 18, 7);
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    font-size: 10rem;
+    margin: 15rem auto;
+    max-width: 60%;
+    z-index: 2;
+  }
+  p::before{
+    content: '';
+    animation: textchange infinite 10s;
+  }
+  @keyframes textchange{
+    1%{
+       content: 'YOU STINK 10';
+    }
+    8%{
+      content: 'YOU STINK 09';
+   }
+   16%{
+    content: 'YOU STINK 08';
+ }
+ 24%{
+  content: 'YOU STINK 07';
+}
+32%{
+  content: 'YOU STINK 06';
+}
+40%{
+  content: 'YOU STINK 05';
+}
+48%{
+  content: 'YOU STINK 04';
+}
+56%{
+  content: 'YOU STINK 03';
+}
+64%{
+  content: 'YOU STINK 02';
+}
+72%{
+  content: 'YOU STINK 01';
+}
+    80%{
+      content: 'YOU STINK';
+   }
+    100%{
+        content: 'BB :)!';
+    }
+  }
