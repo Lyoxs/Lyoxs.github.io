@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // lenis smooth scroll
+    
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+
     // Get the current year
 
     let diesesjahr = new Date().getFullYear();
